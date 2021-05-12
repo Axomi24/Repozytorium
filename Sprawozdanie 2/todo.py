@@ -10,10 +10,13 @@ class Record:
 def draw():
     print("====TODO====")
     ind=1
-    for i in tasks:
-        display=str(ind)+") "+str(i.task)
-        print(display)
-        ind+=1
+    if len(tasks)>0:
+        for i in tasks:
+            display=str(ind)+") "+str(i.task)
+            print(display)
+            ind+=1
+    else:
+        print("Hooray! Nothing ToDo!")
     print("====MENU====")
     print("1) Create a new task")
     print("2) Delete a task")
