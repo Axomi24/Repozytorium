@@ -23,12 +23,13 @@ while True:
     clear()
     draw()
     
-    while True:
+    while True: #Wait for correct user input
         try:
             act=int(input("ACTION: "))
             break
         except ValueError:
             print('Enter a number. Try again.')
+
     if act==1: #CREATE
         task=input("Describe the task: ")
         if task!='':
@@ -45,9 +46,9 @@ while True:
                 print('Enter a number. Try again.')
 
         if 1 <= ind <= len(tasks):
-            rem=tasks[ind-1]
+            rem=tasks[ind-1] #remove the object
             del rem
-            tasks.pop(ind-1)
+            tasks.pop(ind-1) #remove the record
         else:
             print("Wrong value, Value is out of range")
             input("Press enter to continue")
