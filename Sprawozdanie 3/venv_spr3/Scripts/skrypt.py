@@ -9,8 +9,8 @@ def find_img(link):
     src=result.content
     soup=BeautifulSoup(src, 'lxml')
     imgs=[]
-    for img in soup.find_all("img"):
+    for img in soup.find_all("img", "article-image"):
         imgs.append(img.attrs['src'])
     return imgs[random.randint(0, len(imgs)-1)]
-
-print(find_img(link))
+meme=requests.get(find_img(link), allow_redirects=True)
+open('meme.jpg', 'wb').write(meme.content)
