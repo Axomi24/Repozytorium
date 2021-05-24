@@ -1,0 +1,61 @@
+html
+{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:lightgrey;
+  background-color: darkgray;
+}
+
+.App 
+{
+  text-align: center;
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(68, 68, 114);
+  color: white;
+}
+
+.nav_links
+{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#stage
+{
+    height: 600px;
+    width: 100%;
+    background-image:url("stage.jpg");
+    color: black;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 72px;
+}
+
+#footer
+{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(68, 68, 114);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
